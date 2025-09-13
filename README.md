@@ -31,26 +31,37 @@ Python ≥ 3.9
 Recommended: CUDA-enabled PyTorch for training
 
 ## Data
+
 I use the English Thomas and English Manchester corpora from CHILDES.
+
 Data can be downloaded from google drive by the link
 
 ## 1) Data preparation
+
 These scripts expect to be run in Google Colab as written.
 
 childesdataprep_thomas.py – cleans/splits Thomas data for pretraining (produces train/valid).
+
 childesdataprep.py – cleans/splits Manchester data for fine-tuning (produces child–age group train/valid/test).
+
 Outputs: cleaned .csv files of per-group splits that are consumed by the training scripts below.
 
 ## 2) Pretraining (T-BART)
+
 Pretrain the baseline model on the Thomas corpus:
+
 python pretrain_with_Thomas_A.py \
+
 This produces a checkpoint we refer to as T-BART.
 
 ## Fine-tuning (C-BART):
+
 python finetuing_with_manchester.py \
+
 This produces the C-BART checkpoint.
 
 ## 4) Evaluation
+
 test_finetuned_model.py evaluates the fine-tuned model per child–age group.
 
 Important: This script tests one child–age group at a time.
