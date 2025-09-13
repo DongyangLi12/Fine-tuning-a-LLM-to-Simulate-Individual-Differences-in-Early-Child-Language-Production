@@ -2,21 +2,32 @@
 ## This repository contains the code used to (i) prepare CHILDES data, (ii) pretrain a BART-based baseline model (T-BART), (iii) fine-tune it to child-specific speech (C-BART), and (iv) evaluate generated language and error distributions by child–age group.
 
 ## Repository layout
-├── childesdataprep.py            # Data cleaning for Manchester corpus  (run in Colab)
-├── childesdataprep_thomas.py     # Data cleaning for Thomas corpus     (run in Colab)
-├── pretrain_with_Thomas_A.py     # Pretrain T-BART on Thomas (Python 3)
-├── finetuing_with_manchester.py  # Fine-tune C-BART on Manchester (Python 3)
-└── test_finetuned_model.py       # Evaluate by child–age group (run in Colab; edit file paths)
+childesdataprep.py            # Data cleaning for Manchester corpus  (run in Colab)
+
+childesdataprep_thomas.py     # Data cleaning for Thomas corpus     (run in Colab)
+
+pretrain_with_Thomas_A.py     # Pretrain T-BART on Thomas (Python 3)
+
+finetuing_with_manchester.py  # Fine-tune C-BART on Manchester (Python 3)
+
+test_finetuned_model.py       # Evaluate by child–age group (run in Colab; edit file paths)
+
 ## Colab vs. local Python 3
+
 Colab notebooks/environment required:
+
 childesdataprep.py, childesdataprep_thomas.py, test_finetuned_model.py
+
 These scripts currently use Colab-style shell magics (!pip, !gdown, etc.). If you want to run them in plain Python 3, replace those with subprocess or library APIs (see Running in plain Python 3 below).
 
 Plain Python 3 (local/server) required:
+
 pretrain_with_Thomas_A.py, finetuing_with_manchester.py
 
 ## Requirements:
+
 Python ≥ 3.9
+
 Recommended: CUDA-enabled PyTorch for training
 
 ## Data
