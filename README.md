@@ -54,7 +54,7 @@ python pretrain_with_Thomas_A.py \
 
 This produces a checkpoint we refer to as T-BART.
 
-## Fine-tuning (C-BART):
+## 3) Fine-tuning (C-BART):
 
 python finetuing_with_manchester.py \
 
