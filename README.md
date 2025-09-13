@@ -1,5 +1,5 @@
 # Fine-tuning-a-LLM-to-Simulate-Individual-Differences-in-Early-Child-Language-Production
-# This repository contains the code used to (i) prepare CHILDES data, (ii) pretrain a BART-based baseline model (T-BART), (iii) fine-tune it to child-specific speech (C-BART), and (iv) evaluate generated language and error distributions by child–age group.
+## This repository contains the code used to (i) prepare CHILDES data, (ii) pretrain a BART-based baseline model (T-BART), (iii) fine-tune it to child-specific speech (C-BART), and (iv) evaluate generated language and error distributions by child–age group.
 
 # Repository layout
 ├── childesdataprep.py            # Data cleaning for Manchester corpus  (run in Colab)
